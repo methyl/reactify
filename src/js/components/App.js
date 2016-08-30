@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import ViewManager from './ViewManager';
 
 export default class App extends Component {
   static propTypes = {
@@ -8,7 +9,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="page-container">
-        {this.props.children}
+        <ViewManager />
       </div>
     );
   }
